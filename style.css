@@ -1,0 +1,196 @@
+body
+{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+}
+p, h1,h2,h3,h4,h5,h6
+{
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+@font-face{
+    font-family: haken;
+    src: url(./help/assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+.container-fluid{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+}
+
+#result-section
+    {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        border-radius: 30px;
+    }
+
+    
+    .score-container
+    {
+        text-align: center;
+        color: #fff;
+        padding: 2rem 5rem;
+        border-radius: 30px;
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+     .score-container h5,.total-score,.score-container > p{
+        color:  hsl(241, 100%, 89%);
+    }
+    .score
+    {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .total-score
+    {
+        font-size: 0.8rem;
+    }
+    .score-container h3
+    {
+        color: white;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    .score-container > p
+    {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .summary-container
+    {
+        padding: 2rem;
+    }
+
+    .summary-box
+    {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 40px 1fr 120px;
+        border-radius: 5px;
+    }
+    .summary-box.reaction{
+        background-color: hsla(0, 100%, 67%,0.1);
+        margin-top: 1.5rem;
+    }
+    .summary-box.memory
+    {
+        background-color: hsla(39, 100%, 56%,0.1);
+    }
+
+    .summary-box.verbal{
+        background-color: hsla(166, 100%, 37%,0.1);
+    }
+    .summary-box.visual{
+        background-color: hsla(234, 85%, 45%,0.1);
+    }
+    .summary-box:not(:last-child)
+    {
+        margin-bottom: 1.5rem;
+    }
+
+    .summary-text{
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+    }
+    .summary-text.reaction
+    {
+        color: hsl(0, 100%, 67%);
+    }
+    .summary-text.memory{
+        color: hsl(39, 100%, 56%);
+    }
+    .summary-text.verbal
+    {
+        color: hsl(166, 100%, 37%);
+    }
+
+    .summary-text.visual{
+        color: hsl(234, 85%, 45%);
+    }
+
+        .score-box
+    {
+        border-radius: 50%;
+        padding: 1rem;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1rem 0px;
+        height: 150px;
+        margin: 2.4rem auto 2.4rem auto;
+        background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),   hsla(241, 72%, 46%, 0));
+    }
+
+    .summary-score
+    {
+        color: gray;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .summary-score > span{
+        font-weight: 700;
+        color: hsl(224, 30%, 27%);
+    }
+    .summary-btn
+    {
+        display: block;
+        width: 100%;
+        border-radius: 30px;
+        background: hsl(224, 30%, 27%);
+        color: #fff;
+        height: 40px;
+        border: none;
+        margin-top: 2.0rem;
+    }
+    .summary-btn:hover
+    {
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
+    }
+
+@font-face{
+    font-family: haken-bold;
+    src: url(./help/assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+
+@media only screen and (max-width:900px)
+{
+    #result-section
+    {
+        max-width: 100%;
+        display: block;
+    }
+
+    .score-container
+    {
+        display: block;
+        padding: 2rem 4rem;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .score-container
+    {
+        padding: 2rem 4rem;
+    }
+
+
+}
